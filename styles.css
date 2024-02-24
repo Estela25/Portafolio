@@ -1,0 +1,49 @@
+/* Estilos generales */
+body.dark-theme {
+    background-color: #222; /* Cambia el color de fondo a oscuro */
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+header, footer {
+    background-color: #333; /* Colores de encabezado y pie de página más oscuros */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff; /* Cambia el color de los enlaces en la barra de navegación a blanco */
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+a {
+    color: #007bff; /* Color azul típico de los enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 40px; /* Ajusta el tamaño de las imágenes de las redes sociales */
+    margin: 0 5px; /* Agrega un pequeño margen entre las imágenes */
+}
+
+.img-medium {
+    max-width: 60%; /* Puedes ajustar el porcentaje según tus preferencias */
+    margin: auto; /* Centra la imagen horizontalmente */
+  }
