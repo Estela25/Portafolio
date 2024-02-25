@@ -14,8 +14,24 @@ function actualizarEdad() {
 }
  
 // Actualizar la edad al cargar la página
-window.onload = function() {
+window.onload = function () {
     actualizarEdad();
     // Actualizar la edad cada año
     setInterval(actualizarEdad, 1000 * 60 * 60 * 24 * 365); // Actualizar cada año
 };
+ 
+function descargarArchivo() {
+    var url = 'CV/CV.pdf';
+ 
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = 'curriculum_vitae.pdf';
+ 
+    document.body.appendChild(link);
+ 
+    link.click();
+ 
+    document.body.removeChild(link);
+}
+ 
+document.getElementById('downloadButton').addEventListener('click', descargarArchivo);
