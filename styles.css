@@ -3,7 +3,7 @@ body.dark-theme {
     background-color: #222;
     color: #fff;
 }
- 
+
 header,
 footer {
     background-color: #333;
@@ -11,46 +11,72 @@ footer {
     padding: 20px;
     text-align: center;
 }
- 
+
 nav ul li a {
     color: #fff;
 }
- 
+
 section {
     padding: 20px;
 }
- 
+
 .project {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
- 
+
 .project h3 {
     margin-top: 0;
 }
- 
+
 a {
     color: #007bff;
     text-decoration: none;
 }
- 
+
 a:hover {
     text-decoration: underline;
 }
- 
+
 .social-icons img {
     width: 40px;
     margin: 0 5px;
 }
- 
+
 .img-medium {
     max-width: 100%;
     margin: auto;
 }
- 
+
 .fontTitle {
     font-size: xxx-large;
-    background-color: gray;
+    background-color: rgb(77, 77, 77);
     font-style: italic;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: opacity 0.3s;
+    opacity: 1;
+    z-index: 1000;
+    font-size:40px;
+}
+
+.floating-btn:hover{
+    cursor: pointer;
+}
+
+.floating-btn.hide {
+    opacity: 0;
+}
+
+.box-shadow{
+    transition: box-shadow 0.3s;
+}
+
+.box-shadow:hover{
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
 }
