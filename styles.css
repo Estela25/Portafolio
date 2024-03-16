@@ -134,3 +134,9 @@ a:hover {
     flex-direction: column;
     height: 30vh;
 }
+    #Habilidades .row .col-md-2 i:hover {
+    color: rgb(169, 182, 240); /* Cambia el color al pasar el cursor */
+}
+#Metodologias .row .col-md-4 i:hover {
+    color: rgb(208, 153, 229); /* Cambia el color al pasar el cursor */
+}
