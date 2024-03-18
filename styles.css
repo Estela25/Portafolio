@@ -117,8 +117,8 @@ a:hover {
   }
   
   #btnHome a:hover {
-    background-color: #9c80ff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: #bcadf2;
+    box-shadow: 0 0 10px rgba(234, 158, 158, 0.5);
   }
   #Metodologias {
     display: flex;
