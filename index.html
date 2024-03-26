@@ -17,8 +17,9 @@
     <nav class="my-3 navbar navbar-expand-lg bg-secondary-tertiary navbar-dark justify-content-center">
         <div class="container-fluid">
             <div class="d-flex align-items-center">
-                <img class="rounded-circle" src="./images/Diseño sin título.jpg" alt="" height="120">
+                <img  id="profile-image" class="rounded-circle" src="./images/Diseño sin título.jpg" alt="" height="120">
             </div>
+    
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +33,7 @@
                     </li>
                     <li class="nav-item d-flex justify-content-center align-items-center mx-4">
 
-                        <a class="nav-link active" href="#carouselExampleCaptions">Proyectos</a>
+                        <a class="nav-link active" href="#proyect">Proyectos</a>
                         <i class='bx bxs-package'></i>
                     </li>
 
@@ -48,16 +49,18 @@
                         <i class='bx bxl-html5'></i>
                     </li>
 
+                      <li class="nav-item d-flex justify-content-center align-items-center mx-3 ">
+
+                        <a class="nav-link active" href="#CasosDeExito">Casos De Exito</a>
+                        <i class='bx bx-category-alt'></i>
+                    </li>
+
                     <li class="nav-item d-flex justify-content-center align-items-center mx-2 ">
 
                         <a class="nav-link active" href="#Servicios">Contactos</a>
                         <i class='bx bxs-conversation'></i>
                     </li>
-                   <!-- <li class="nav-item d-flex justify-content-center align-items-center mx-3 ">
-
-                        <a class="nav-link active" href="#CasosDeExito">Casos De Exito</a>
-                        <i class='bx bx-category-alt'></i>
-                    </li>-->
+                   
                    
                 </ul>
             </div>
@@ -112,13 +115,13 @@
             </div>
         </div>
 
-        <div>
+        <div id="proyect">
             <h1>Mis proyectos</h1>
             <small class="">Proyectos en los cuales he participado</small>
         </div>
 
 
-        <div id="carouselExampleCaptions" class="carousel slide my-5">
+        <div id="carouselExampleCaptions" class="carousel slide my-3">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -246,7 +249,7 @@
                 </div>
             </section>
         
-           <!-- <section id="CasosDeExito" class="text-center" style="background-color: black;">
+           <section id="CasosDeExito" class="text-center" style="background-color: black;">
                 <div class="container">
                     <h2 class="my-4" style="color: white;">Casos de Éxito</h2>
                     <div class="table-responsive">
@@ -274,7 +277,7 @@
                         </table>
                     </div>
                 </div>
-            </section>-->
+            </section> 
 
         
         
@@ -439,7 +442,33 @@
         window.addEventListener('scroll', checkScrollPosition);
 
         checkScrollPosition();
-    </script>
+   
+
+        const profileImage = document.getElementById('profile-image');
+
+profileImage.addEventListener('mouseover', function() {
+    
+    const enlargedImage = document.createElement('img');
+    enlargedImage.src = profileImage.src; 
+    enlargedImage.style.width = '400px'; 
+    enlargedImage.style.height = '400px'; 
+    enlargedImage.style.position = 'fixed'; 
+    enlargedImage.style.top = '50%'; 
+    enlargedImage.style.left = '50%'; 
+    enlargedImage.style.transform = 'translate(-50%, -50%)';      
+    enlargedImage.style.zIndex = '9999'; 
+    enlargedImage.style.borderRadius = '10px'; 
+
+    
+    document.body.appendChild(enlargedImage);
+
+    
+    profileImage.addEventListener('mouseout', function() {
+        // Eliminar la imagen ampliada del cuerpo del documento
+        document.body.removeChild(enlargedImage);
+    });
+});
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://use.fontawesome.com/82eb904f04.js"></script>
 </body>
