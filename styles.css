@@ -140,3 +140,5 @@ a:hover {
 #Metodologias .row .col-md-4 i:hover {
     color: rgb(208, 153, 229); /* Cambia el color al pasar el cursor */
 }
+
+.luz:hover{box-shadow: #7ae2f0;}
